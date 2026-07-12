@@ -25,8 +25,8 @@ load_dotenv(encoding="utf-8")
 model = init_chat_model(
     model="deepseek-v4-flash",
     model_provider="openai",
-    api_key=os.getenv("deepseek-api"),
-    base_url="https://api.deepseek.com",
+    api_key=os.getenv("QWEN_API_KEY"),
+    base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
     temperature=0.7,  # 0～1，越高越随机；此处略高便于看到多次输出差异
     # max_tokens=256,  # 可选：限制单次回复长度
 )
