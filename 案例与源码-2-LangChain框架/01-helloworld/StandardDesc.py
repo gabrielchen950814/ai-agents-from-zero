@@ -65,7 +65,7 @@ def init_llm_client() -> ChatOpenAI:
     llm = ChatOpenAI(
         model="deepseek-v3.2",  # 模型名称（这里演示的是“DeepSeek 模型 + 阿里百炼兼容接口”）
         api_key=api_key,
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",  # 阿里云提供的兼容 OpenAI 的地址
+        base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",  # 阿里云提供的兼容 OpenAI 的地址
         temperature=0.7,  # 控制「随机程度」：0 更确定、重复性高；1 更随机、更有创意。一般 0.5～0.8 即可。
         max_tokens=2048,  # 单次回复最多生成多少个 token（约等于字数），防止回复过长或超限。
     )
