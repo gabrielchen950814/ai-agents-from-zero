@@ -27,7 +27,7 @@ llm_qwen = init_chat_model(
     model="qwen-plus",
     model_provider="openai",  # 阿里百炼为 OpenAI 兼容接口
     api_key=os.getenv("QWEN_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
 )
 
 print(llm_qwen.invoke("你是谁").content)
