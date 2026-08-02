@@ -21,8 +21,8 @@ load_dotenv(encoding="utf-8")
 # ========== 2. 初始化客户端（底层 API，直接请求厂商接口） ==========
 # 这里以 DeepSeek 官方兼容接口为例；若你切到别的 OpenAI 兼容平台，通常只需调整 base_url、api_key、model。
 client = OpenAI(
-    api_key=os.getenv("deepseek-api"),  # 从环境变量读取，此处以 DeepSeek 为例
-    base_url="https://api.deepseek.com",  # 可改为其他 OpenAI 兼容地址（如阿里百炼）
+    api_key=os.getenv("QWEN_API_KEY"),  # 从环境变量读取，此处以 DeepSeek 为例
+    base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",  # 可改为其他 OpenAI 兼容地址（如阿里百炼）
 )
 
 # ========== 3. 发起对话并打印回复 ==========

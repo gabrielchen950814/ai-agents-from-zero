@@ -22,8 +22,8 @@ load_dotenv()
 model = init_chat_model(
     model="qwen-plus",
     model_provider="openai",
-    api_key=os.getenv("aliQwen-api"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key=os.getenv("QWEN_API_KEY"),
+    base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
 )
 
 
