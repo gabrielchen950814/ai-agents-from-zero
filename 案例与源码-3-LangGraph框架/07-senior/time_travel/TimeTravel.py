@@ -115,7 +115,7 @@ def main():
     print("3. 从中间状态恢复执行，创建第二个故事...")
 
     # 索引需与 get_state_history 顺序一致；states1[2] 对应 create_character 执行后的快照（请以本地打印为准调整）
-    character_state = states1[2]
+    character_state = states1[3]
     print(f"选中的状态: {character_state.next}")
     print(f"选中的状态值: {character_state.values}")
 

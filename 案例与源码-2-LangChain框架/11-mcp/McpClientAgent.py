@@ -91,9 +91,9 @@ async def run_chat_loop(config_path: str | Path | None = None) -> None:
 
     # 语言模型（DeepSeek，与截图一致；可改为其他 OpenAI 兼容接口）
     llm = ChatOpenAI(
-        model="deepseek-v4-flash",
-        api_key=os.getenv("deepseek-api"),
-        base_url="https://api.deepseek.com",
+        model="qwen-plus",
+        api_key=os.getenv("QWEN_API_KEY"),
+        base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
     )
 
     # 对话提示：系统提示要求使用工具完成用户请求，agent_scratchpad 供 Executor 填入中间步骤

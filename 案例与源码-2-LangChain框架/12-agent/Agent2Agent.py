@@ -30,8 +30,8 @@ load_dotenv()
 # ===================== 大模型与输出解析 =====================
 llm = ChatOpenAI(
     model="qwen-plus",
-    api_key=os.getenv("aliQwen-api"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key=os.getenv("QWEN_API_KEY"),
+    base_url="https://ws-g6mfwvru4cu93xjs.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
 )
 output_parser = StrOutputParser()
 
